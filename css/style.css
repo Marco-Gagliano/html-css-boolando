@@ -1,8 +1,110 @@
+/* GENERAL PRESETS */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* MAIN */
+.row {
+  width: 80%;
+  margin: 24px auto;
+  text-align: center;
+}
+
+.product {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+
+/* MAIN - TEXT */
+.new-prize {
+  color: red;
+  font-weight: bold;
+}
+
+.new-prize::after {
+  content: "\20AC";
+}
+
+.old-prize {
+  color: black;
+  text-decoration: line-through;
+}
+
+.old-prize::after {
+  content: "\20AC";
+}
+
+
+.price {
+  margin-top: 10px;
+}
+
+.discount {
+  background-color: rgb(235, 0, 55);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  padding: 7px;
+  bottom: 35px;
+  left: 0;  
+}
+
+.eco {
+  background-color: rgb(0, 135, 90);
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  position: absolute;
+  padding: 7px;
+  bottom: 35px;
+  left: 55px;
+}
+
+.favourite {
+  background-color: white;
+  color: black;
+  font-size: xx-large;
+  position: absolute;
+  padding: 17px;
+  top: 18px;
+  right: 0
+}
+
+.favourite:hover {
+  color: red;
+}
+
+.price > span {
+  text-transform: capitalize;
+}
+
+
+/* MAIN - HOVER PHOTOS*/
+
+.top-left:hover {
+  content: url(/img/1b.webp);
+}
+
+.top-middle:hover {
+  content: url(/img/2b.webp);
+}
+
+.top-right {
+width: 640px;
+height: 924px;
+}
+
+.top-right:hover {
+  content: url(/img/3b.webp);
+}
+
+
 
